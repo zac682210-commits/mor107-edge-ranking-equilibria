@@ -1,6 +1,10 @@
 # Pure Nash Equilibrium Existence in Edge-Ranking Flow Allocation Games is Σ₂ᵖ-Complete
 
-**Preprint v0.1, release candidate — 12 October 2026.** Author: **Zhiyan Lin**. This folder is prepared for review; it has not been published or independently refereed.
+**Author:** Zhiyan Lin
+
+📄 **[Read the paper](paper.pdf)**
+
+**Main result.** Pure Nash equilibrium existence in edge-ranking flow allocation games is Σ₂ᵖ-complete under greatest-fixed-point clearing, with every vertex strategic.
 
 The paper proves that pure Nash equilibrium existence in the original edge-ranking flow allocation model is Σ₂ᵖ-complete. Every vertex is strategic, utility is total outgoing flow, and clearing selects the coordinatewise greatest fixed point. Hardness holds on simple directed graphs with polynomially bounded integral capacities and supplies.
 
