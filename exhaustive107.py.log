@@ -1,0 +1,6 @@
+literal_y profiles 4608 vertices 20
+{'name': 'literal_y', 'expected_qbf': False, 'profiles': 4608, 'pne_count': 0, 'seconds': 0.6294636726379395}
+contradiction_y profiles 9216 vertices 21
+{'name': 'contradiction_y', 'expected_qbf': True, 'profiles': 9216, 'pne_count': 288, 'seconds': 1.5836143493652344}
+existential_switch profiles 36864 vertices 28
+{'name': 'existential_switch', 'expected_qbf': True, 'profiles': 36864, 'pne_count': 144, 'seconds': 9.82979154586792}

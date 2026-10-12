@@ -1,0 +1,214 @@
+{
+  "openalex_work": {
+    "id": "https://openalex.org/W4391111008",
+    "display_name": "Flow Allocation Games",
+    "cited_by_count": 4,
+    "updated_date": "2026-10-08T09:06:37.294493"
+  },
+  "openalex_citing": {
+    "count": 4,
+    "results": [
+      {
+        "title": "Payment scheduling in the Interval Debt Model",
+        "year": 2024,
+        "doi": "https://doi.org/10.1016/j.tcs.2024.115028"
+      },
+      {
+        "title": "Dynamic debt swapping in financial networks",
+        "year": 2026,
+        "doi": "https://doi.org/10.1016/j.tcs.2026.115788"
+      },
+      {
+        "title": "The pipeline externalities problem",
+        "year": 2025,
+        "doi": "https://doi.org/10.1016/j.jmateco.2025.103209"
+      },
+      {
+        "title": "Algorithms for Claims Trading",
+        "year": 2026,
+        "doi": "https://doi.org/10.1145/3801151"
+      }
+    ]
+  },
+  "semantic_citing": {
+    "offset": 0,
+    "data": [
+      {
+        "citingPaper": {
+          "paperId": "a62b0c5d5c93825132e84d808b827845f84a9616",
+          "externalIds": {
+            "DBLP": "conf/stacs/Besting0H26",
+            "ArXiv": "2602.16387",
+            "DOI": "10.4230/LIPIcs.STACS.2026.14",
+            "CorpusId": 285725887
+          },
+          "url": "https://www.semanticscholar.org/paper/a62b0c5d5c93825132e84d808b827845f84a9616",
+          "title": "Computing Tarski Fixed Points in Financial Networks",
+          "year": 2026
+        }
+      },
+      {
+        "citingPaper": {
+          "paperId": "eb12cd7bfbd5f95becdd39b3b1c4780236c8f01a",
+          "externalIds": {
+            "DOI": "10.1016/j.jmateco.2025.103209",
+            "CorpusId": 283619261
+          },
+          "url": "https://www.semanticscholar.org/paper/eb12cd7bfbd5f95becdd39b3b1c4780236c8f01a",
+          "title": "The pipeline externalities problem",
+          "year": 2025
+        }
+      },
+      {
+        "citingPaper": {
+          "paperId": "a333b7ca249c9f2b7f7fc7e6943fb806c5e2ab10",
+          "externalIds": {
+            "DBLP": "conf/ijcai/ZhouWVBSCW24",
+            "DOI": "10.24963/ijcai.2024/337",
+            "CorpusId": 271502343
+          },
+          "url": "https://www.semanticscholar.org/paper/a333b7ca249c9f2b7f7fc7e6943fb806c5e2ab10",
+          "title": "A Strategic Analysis of Prepayments in Financial Credit Networks",
+          "year": 2024
+        }
+      },
+      {
+        "citingPaper": {
+          "paperId": "ce098a77259ee4250bf61ea91dd6d662ddaa4a64",
+          "externalIds": {
+            "DBLP": "conf/sofsem/FriedetzkyKMST23",
+            "ArXiv": "2403.02198",
+            "DOI": "10.1007/978-3-031-23101-8_18",
+            "CorpusId": 254998842
+          },
+          "url": "https://www.semanticscholar.org/paper/ce098a77259ee4250bf61ea91dd6d662ddaa4a64",
+          "title": "Payment Scheduling in the Interval Debt Model",
+          "year": 2024
+        }
+      },
+      {
+        "citingPaper": {
+          "paperId": "66269b6ff67d72a4cbf24a8363141cccd9e40fbe",
+          "externalIds": {
+            "ArXiv": "2402.13627",
+            "DBLP": "conf/stacs/0001VW24",
+            "DOI": "10.1145/3801151",
+            "CorpusId": 267770612
+          },
+          "url": "https://www.semanticscholar.org/paper/66269b6ff67d72a4cbf24a8363141cccd9e40fbe",
+          "title": "Algorithms for Claims Trading",
+          "year": 2024
+        }
+      },
+      {
+        "citingPaper": {
+          "paperId": "4c5246a23146e569069e29cca5826caaf2fb5570",
+          "externalIds": {
+            "DBLP": "conf/sand/Froese0W25",
+            "ArXiv": "2302.11250",
+            "DOI": "10.1016/j.tcs.2026.115788",
+            "CorpusId": 257079256
+          },
+          "url": "https://www.semanticscholar.org/paper/4c5246a23146e569069e29cca5826caaf2fb5570",
+          "title": "Dynamic Debt Swapping in Financial Networks",
+          "year": 2023
+        }
+      },
+      {
+        "citingPaper": {
+          "paperId": "2d3c5804c45dc6e25156e49a9ce81e7a0b50086e",
+          "externalIds": {
+            "DBLP": "journals/eor/Alexandre0MR23",
+            "DOI": "10.1016/j.ejor.2023.01.043",
+            "CorpusId": 256296687
+          },
+          "url": "https://www.semanticscholar.org/paper/2d3c5804c45dc6e25156e49a9ce81e7a0b50086e",
+          "title": "Does the default pecking order impact systemic risk? Evidence from Brazilian data",
+          "year": 2023
+        }
+      },
+      {
+        "citingPaper": {
+          "paperId": "84c5bd3cd2f1d7887fd0f03211f9ab889149c0d1",
+          "externalIds": {
+            "ArXiv": "2202.10986",
+            "DBLP": "journals/ai/KanellopoulosKZ25",
+            "DOI": "10.1016/j.artint.2025.104424",
+            "CorpusId": 247025709
+          },
+          "url": "https://www.semanticscholar.org/paper/84c5bd3cd2f1d7887fd0f03211f9ab889149c0d1",
+          "title": "Optimal bailouts and strategic debt forgiveness in financial networks",
+          "year": 2022
+        }
+      },
+      {
+        "citingPaper": {
+          "paperId": "53e602aff4ac1c0e0db09cdb04978eb977fd47fc",
+          "externalIds": {
+            "DBLP": "journals/corr/abs-2107-06623",
+            "ArXiv": "2107.06623",
+            "DOI": "10.1145/3490354.3494391",
+            "CorpusId": 235829498
+          },
+          "url": "https://www.semanticscholar.org/paper/53e602aff4ac1c0e0db09cdb04978eb977fd47fc",
+          "title": "Financial network games",
+          "year": 2021
+        }
+      },
+      {
+        "citingPaper": {
+          "paperId": "25dd33ffda7da255dd65ad4da912b09f43fa4aab",
+          "externalIds": {
+            "CorpusId": 245257819
+          },
+          "url": "https://www.semanticscholar.org/paper/25dd33ffda7da255dd65ad4da912b09f43fa4aab",
+          "title": "Does Default Pecking Order Impact Systemic Risk",
+          "year": 2021
+        }
+      }
+    ]
+  },
+  "author_hoefer": {
+    "bytes": 14761
+  },
+  "problem107": {
+    "keys": [
+      "problem_id",
+      "paper_id",
+      "source_paper",
+      "source_paper_title",
+      "source_paper_url",
+      "source_paper_authors",
+      "source_paper_journal",
+      "source_paper_publication_year",
+      "source_paper_bibtex",
+      "problem_index",
+      "pipeline_generated_at_utc",
+      "export_mode",
+      "context",
+      "title",
+      "background_latex",
+      "problem_definition_latex",
+      "latex",
+      "location_in_paper",
+      "open_problem_quote",
+      "area",
+      "keywords",
+      "counterexample_suitability",
+      "counterexample_suitability_rationale",
+      "alphaevolve_suitability",
+      "alphaevolve_suitability_rationale",
+      "extraction_model",
+      "extraction_reasoning_effort",
+      "verification",
+      "literature_review",
+      "costs",
+      "provenance",
+      "forward_citation_review",
+      "quantitative_bounds"
+    ]
+  },
+  "github_code_search": {
+    "error": "HTTP Error 401: Unauthorized"
+  }
+}

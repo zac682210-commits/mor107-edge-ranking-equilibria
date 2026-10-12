@@ -1,0 +1,31 @@
+{
+  "started_at": "2026-10-12T07:38:18.974365+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "random_seeds": {
+    "verify107": 107,
+    "independent_milp_check": 20261012
+  },
+  "comparisons": [
+    {
+      "script": "verify107.py",
+      "output": "verification107.json",
+      "all_non_timing_fields_match": true
+    },
+    {
+      "script": "exhaustive107.py",
+      "output": "exhaustive107_results.json",
+      "all_non_timing_fields_match": true
+    },
+    {
+      "script": "independent_milp_check.py",
+      "output": "independent_milp_results.json",
+      "all_non_timing_fields_match": true
+    }
+  ],
+  "dependencies": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "ended_at": "2026-10-12T07:39:32.865987+00:00"
+}

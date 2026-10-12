@@ -1,0 +1,6 @@
+{
+  "method": "Disjunctive MILP maximizing total flow, separate from downward iteration",
+  "floating_optimization_caveat": "MILP solver uses floating arithmetic; rounded fixed-point equations checked exactly; no formal optimality certificate claimed",
+  "count": 49,
+  "seconds": 0.09361577033996582
+}

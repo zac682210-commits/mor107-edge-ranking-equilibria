@@ -1,0 +1,527 @@
+{
+  "method": "Disjunctive MILP maximizing total flow, separate from downward iteration",
+  "floating_optimization_caveat": "MILP solver uses floating arithmetic; rounded fixed-point equations checked exactly; no formal optimality certificate claimed",
+  "checks": [
+    {
+      "kind": "feedback_sharpness",
+      "M": 2,
+      "T": 3,
+      "good": 2,
+      "bad": 3
+    },
+    {
+      "kind": "feedback_sharpness",
+      "M": 3,
+      "T": 3,
+      "good": 3,
+      "bad": 3
+    },
+    {
+      "kind": "feedback_sharpness",
+      "M": 4,
+      "T": 3,
+      "good": 4,
+      "bad": 3
+    },
+    {
+      "kind": "alarm",
+      "input": 0,
+      "bits": [
+        0,
+        0,
+        0
+      ],
+      "utilities": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "alarm",
+      "input": 0,
+      "bits": [
+        0,
+        0,
+        1
+      ],
+      "utilities": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "kind": "alarm",
+      "input": 0,
+      "bits": [
+        0,
+        1,
+        0
+      ],
+      "utilities": [
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "alarm",
+      "input": 0,
+      "bits": [
+        0,
+        1,
+        1
+      ],
+      "utilities": [
+        2,
+        1,
+        0,
+        2,
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "kind": "alarm",
+      "input": 0,
+      "bits": [
+        1,
+        0,
+        0
+      ],
+      "utilities": [
+        1,
+        2,
+        1,
+        2,
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "kind": "alarm",
+      "input": 0,
+      "bits": [
+        1,
+        0,
+        1
+      ],
+      "utilities": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "kind": "alarm",
+      "input": 0,
+      "bits": [
+        1,
+        1,
+        0
+      ],
+      "utilities": [
+        0,
+        2,
+        0,
+        2,
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "kind": "alarm",
+      "input": 0,
+      "bits": [
+        1,
+        1,
+        1
+      ],
+      "utilities": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "kind": "alarm",
+      "input": 2,
+      "bits": [
+        0,
+        0,
+        0
+      ],
+      "utilities": [
+        5,
+        2,
+        1,
+        2,
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "alarm",
+      "input": 2,
+      "bits": [
+        0,
+        0,
+        1
+      ],
+      "utilities": [
+        3,
+        3,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "kind": "alarm",
+      "input": 2,
+      "bits": [
+        0,
+        1,
+        0
+      ],
+      "utilities": [
+        4,
+        4,
+        0,
+        8,
+        2,
+        2,
+        0
+      ]
+    },
+    {
+      "kind": "alarm",
+      "input": 2,
+      "bits": [
+        0,
+        1,
+        1
+      ],
+      "utilities": [
+        4,
+        3,
+        0,
+        4,
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "kind": "alarm",
+      "input": 2,
+      "bits": [
+        1,
+        0,
+        0
+      ],
+      "utilities": [
+        3,
+        4,
+        1,
+        4,
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "kind": "alarm",
+      "input": 2,
+      "bits": [
+        1,
+        0,
+        1
+      ],
+      "utilities": [
+        3,
+        3,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "kind": "alarm",
+      "input": 2,
+      "bits": [
+        1,
+        1,
+        0
+      ],
+      "utilities": [
+        4,
+        4,
+        0,
+        8,
+        2,
+        2,
+        0
+      ]
+    },
+    {
+      "kind": "alarm",
+      "input": 2,
+      "bits": [
+        1,
+        1,
+        1
+      ],
+      "utilities": [
+        2,
+        5,
+        0,
+        2,
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "kind": "full_graph",
+      "case": 0,
+      "normalized": true,
+      "flow_sum": 113,
+      "tester_utility": 11
+    },
+    {
+      "kind": "full_graph",
+      "case": 0,
+      "normalized": false,
+      "flow_sum": 15,
+      "tester_utility": 11
+    },
+    {
+      "kind": "full_graph",
+      "case": 0,
+      "normalized": true,
+      "flow_sum": 109,
+      "tester_utility": 11
+    },
+    {
+      "kind": "full_graph",
+      "case": 0,
+      "normalized": false,
+      "flow_sum": 115,
+      "tester_utility": 11
+    },
+    {
+      "kind": "full_graph",
+      "case": 0,
+      "normalized": true,
+      "flow_sum": 109,
+      "tester_utility": 11
+    },
+    {
+      "kind": "full_graph",
+      "case": 0,
+      "normalized": false,
+      "flow_sum": 63,
+      "tester_utility": 11
+    },
+    {
+      "kind": "full_graph",
+      "case": 1,
+      "normalized": true,
+      "flow_sum": 89,
+      "tester_utility": 11
+    },
+    {
+      "kind": "full_graph",
+      "case": 1,
+      "normalized": false,
+      "flow_sum": 19,
+      "tester_utility": 11
+    },
+    {
+      "kind": "full_graph",
+      "case": 1,
+      "normalized": true,
+      "flow_sum": 137,
+      "tester_utility": 12
+    },
+    {
+      "kind": "full_graph",
+      "case": 1,
+      "normalized": false,
+      "flow_sum": 43,
+      "tester_utility": 12
+    },
+    {
+      "kind": "full_graph",
+      "case": 1,
+      "normalized": true,
+      "flow_sum": 83,
+      "tester_utility": 11
+    },
+    {
+      "kind": "full_graph",
+      "case": 1,
+      "normalized": false,
+      "flow_sum": 148,
+      "tester_utility": 12
+    },
+    {
+      "kind": "full_graph",
+      "case": 2,
+      "normalized": true,
+      "flow_sum": 391,
+      "tester_utility": 32
+    },
+    {
+      "kind": "full_graph",
+      "case": 2,
+      "normalized": false,
+      "flow_sum": 251,
+      "tester_utility": 33
+    },
+    {
+      "kind": "full_graph",
+      "case": 2,
+      "normalized": true,
+      "flow_sum": 434,
+      "tester_utility": 33
+    },
+    {
+      "kind": "full_graph",
+      "case": 2,
+      "normalized": false,
+      "flow_sum": 319,
+      "tester_utility": 33
+    },
+    {
+      "kind": "full_graph",
+      "case": 2,
+      "normalized": true,
+      "flow_sum": 398,
+      "tester_utility": 32
+    },
+    {
+      "kind": "full_graph",
+      "case": 2,
+      "normalized": false,
+      "flow_sum": 256,
+      "tester_utility": 32
+    },
+    {
+      "kind": "full_graph",
+      "case": 3,
+      "normalized": true,
+      "flow_sum": 239,
+      "tester_utility": 16
+    },
+    {
+      "kind": "full_graph",
+      "case": 3,
+      "normalized": false,
+      "flow_sum": 158,
+      "tester_utility": 17
+    },
+    {
+      "kind": "full_graph",
+      "case": 3,
+      "normalized": true,
+      "flow_sum": 268,
+      "tester_utility": 16
+    },
+    {
+      "kind": "full_graph",
+      "case": 3,
+      "normalized": false,
+      "flow_sum": 211,
+      "tester_utility": 17
+    },
+    {
+      "kind": "full_graph",
+      "case": 3,
+      "normalized": true,
+      "flow_sum": 268,
+      "tester_utility": 16
+    },
+    {
+      "kind": "full_graph",
+      "case": 3,
+      "normalized": false,
+      "flow_sum": 214,
+      "tester_utility": 17
+    },
+    {
+      "kind": "full_graph",
+      "case": 4,
+      "normalized": true,
+      "flow_sum": 245,
+      "tester_utility": 32
+    },
+    {
+      "kind": "full_graph",
+      "case": 4,
+      "normalized": false,
+      "flow_sum": 156,
+      "tester_utility": 32
+    },
+    {
+      "kind": "full_graph",
+      "case": 4,
+      "normalized": true,
+      "flow_sum": 285,
+      "tester_utility": 32
+    },
+    {
+      "kind": "full_graph",
+      "case": 4,
+      "normalized": false,
+      "flow_sum": 178,
+      "tester_utility": 33
+    },
+    {
+      "kind": "full_graph",
+      "case": 4,
+      "normalized": true,
+      "flow_sum": 260,
+      "tester_utility": 32
+    },
+    {
+      "kind": "full_graph",
+      "case": 4,
+      "normalized": false,
+      "flow_sum": 211,
+      "tester_utility": 32
+    }
+  ],
+  "count": 49,
+  "seconds": 0.09361577033996582
+}

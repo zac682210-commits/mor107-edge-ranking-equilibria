@@ -1,0 +1,111 @@
+{
+  "checked_on": "2026-10-12",
+  "problem": 107,
+  "repository": "https://github.com/ai-in-math-or/open-problems-in-or",
+  "tree_sha": "3b2de3237c29623f479c52c31db54fd60b97fd3c",
+  "github_progress_path": "data/llm_math_export/solution_progress/W4391111008_p0/partial_progress/107.pdf",
+  "progress_date": "2026-06-23",
+  "path_commit_sha": "8f63022a1bf4081897ad169e78b5966871c9e0fa",
+  "path_commit_date": "2026-06-26T06:47:00Z",
+  "issues_count": 0,
+  "pull_requests_count": 0,
+  "sources": [
+    {
+      "title": "Flow Allocation Games",
+      "url": "https://algo.rwth-aachen.de/team/hoefer/papers/Bertschinger23Flow.pdf",
+      "doi": "10.1287/moor.2022.0355",
+      "read_scope": "Primary paper of this iteration; complete main-theory extraction in literature107_zh.txt"
+    },
+    {
+      "title": "Flow Allocation Games",
+      "url": "https://arxiv.org/pdf/1908.01714v3",
+      "read_scope": "Preprint numbering/model cross-check; original107.pdf"
+    },
+    {
+      "title": "Public problem107 partial progress",
+      "url": "https://github.com/ai-in-math-or/open-problems-in-or/blob/3b2de3237c29623f479c52c31db54fd60b97fd3c/data/llm_math_export/solution_progress/W4391111008_p0/partial_progress/107.pdf",
+      "read_scope": "Full 8-page note read; QBF architecture attributed"
+    },
+    {
+      "title": "On priority-proportional payments in financial networks",
+      "url": "https://repository.essex.ac.uk/38989/1/Project_1_PPFN_TCS%20%2814%29.pdf",
+      "doi": "10.1016/j.tcs.2024.114767",
+      "read_scope": "Definitions of proper clearing, section6 Theorems15–16 and discussion; prior lossy-cycle mechanism identified; NOT a full main-theory extraction"
+    },
+    {
+      "title": "Seniorities and Minimal Clearing in Financial Network Games",
+      "url": "https://arxiv.org/pdf/2205.15628",
+      "read_scope": "Targeted strategy/clearing distinction; not full-paper extraction"
+    },
+    {
+      "title": "Computing Tarski Fixed Points in Financial Networks",
+      "url": "https://arxiv.org/pdf/2602.16387",
+      "official_url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.STACS.2026.14",
+      "doi": "10.4230/LIPIcs.STACS.2026.14",
+      "read_scope": "Targeted classification/algorithm distinction; official metadata checked"
+    },
+    {
+      "title": "Financial networks with singleton liability priorities",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0304397523002785",
+      "doi": "10.1016/j.tcs.2023.113965",
+      "read_scope": "Publisher and institutional abstracts only; author PDF502/timeout; not recorded as full text read"
+    },
+    {
+      "title": "Martin Hoefer recent publications",
+      "url": "https://algo.rwth-aachen.de/team/hoefer/index.en.shtml",
+      "read_scope": "2025–2026 follow-up screening"
+    }
+  ],
+  "queries": [
+    "flow allocation games Sigma Nash",
+    "edge-ranking Nash complete",
+    "flow allocation games 2026",
+    "singleton liability priorities equilibrium",
+    "financial network games Sigma equilibrium existence",
+    "On priority-proportional payments Sigma",
+    "Strategic Payments in Financial Networks complete"
+  ],
+  "coverage_caveat": "Two search engines used; one returned many unrelated graph-edge-ranking hits. No earlier all-strategic Sigma2p classification found, but absence of search matches is not proof of novelty. Private/unpublished work not covered.",
+  "newness_correction": "Lossy-return subtraction is already in KKZ2024. Claim classification plus uniform strict-dominance implementation, not invention of private-cycle threshold idea.",
+  "second_audit": {
+    "reviewed_at": "2026-10-12T06:40:34.011447+00:00",
+    "completeness": "Passed second same-agent adversarial audit; full original ER-NE theorem, no mathematical gap identified. Not independent peer review.",
+    "changes": [
+      "Explicit zero-capacity-edge removal/lifting",
+      "Reject invalid existential encodings in Sigma2 membership",
+      "Downstream alarm restriction of global greatest fixed point proved",
+      "Uniform-margin necessity illustrated by a feedback example",
+      "AAMAS2018 different-model Sigma2 result cited and distinguished"
+    ],
+    "novelty": "No earlier same-model classification located in inspected sources. Result-level novelty supported but not guaranteed; basic threshold and QBF architecture remain prior work.",
+    "forward_citation_record_counts": {
+      "OpenAlex": 4,
+      "SemanticScholar": 10
+    },
+    "access_limits": [
+      "Global GitHub code search401",
+      "singleton journal PDF502; conference institution PDF403",
+      "Claims trading downloaded version is2024arXivv1, not2026journal fulltext",
+      "Unpublished/unindexed results not excluded"
+    ],
+    "new_verification": {
+      "method": "Distinct MILP clearing optimization + exact fixed-point postchecks",
+      "count": 49,
+      "alarm_profiles": 16,
+      "full_graph_profiles": 30,
+      "feedback_boundary_profiles": 3,
+      "formal_certificate": false
+    },
+    "time_record": {
+      "request_timestamp": "2026-10-12T06:20:34+00:00",
+      "verified_clock_anchor": "2026-10-12T06:28:02+00:00",
+      "research_end": "2026-10-12T06:40:34.011447+00:00",
+      "observed_window_minutes": 20.0,
+      "conservatively_counted_active_minutes": 12.53,
+      "excluded_initial_unclocked_minutes": 7.47,
+      "idle_minutes_counted": 0,
+      "note": "User request timestamp bounds initial active work. Conservatively count only after the first retained explicit clock observation; no sleep, inter-turn waiting, or upload administration counted. Complete-original-problem proof exception applies; this audit found no remaining mathematical gap. External review/absolute priority are not claimed."
+    },
+    "github_summary_file": "review_20261012/branch107_summary.json"
+  }
+}

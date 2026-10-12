@@ -1,0 +1,2 @@
+isolated_gate_cases 284 seconds 61.16185235977173
+{'normalized_profiles': 3600, 'gate_deviation_comparisons': 57504, 'full_pne_checks': 18}

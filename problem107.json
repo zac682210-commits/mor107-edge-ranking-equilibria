@@ -1,0 +1,132 @@
+{
+  "problem_id": "W4391111008_p0",
+  "paper_id": "W4391111008",
+  "source_paper": "W4391111008",
+  "source_paper_title": "Flow Allocation Games",
+  "source_paper_url": "https://doi.org/10.1287/moor.2022.0355",
+  "source_paper_authors": [
+    "Nils Bertschinger",
+    "Martin Hoefer",
+    "Daniel Schmand"
+  ],
+  "source_paper_journal": "Mathematics of Operations Research",
+  "source_paper_publication_year": 2024,
+  "source_paper_bibtex": "@article{Bertschinger_2025, title={Flow Allocation Games}, volume={50}, ISSN={1526-5471}, url={http://dx.doi.org/10.1287/moor.2022.0355}, DOI={10.1287/moor.2022.0355}, number={1}, journal={Mathematics of Operations Research}, publisher={Institute for Operations Research and the Management Sciences (INFORMS)}, author={Bertschinger, Nils and Hoefer, Martin and Schmand, Daniel}, year={2025}, month=feb, pages={68\u201389} }",
+  "problem_index": 0,
+  "pipeline_generated_at_utc": "2026-04-20T23:08:51.436215+00:00",
+  "export_mode": "unverified",
+  "context": "Section 5.1, Remark 21 (page 38 in the provided text pagination)\n\nIt is unclear whether the problem of deciding existence of a pure Nash equilibrium in an edge-ranking game is in NP or not, due to NP-hardness of verification that a node plays a best response (see Theorem 14). It is easy to see that the decision problem is in \\(\\Sigma_2^p\\). The problem could be \\(\\Sigma_2^p\\)-complete, similar to related decision problems in strategic max-flow games [33, 21]. Proving such a result is an interesting problem.",
+  "title": "Classify the complexity of Nash equilibrium existence in edge-ranking flow games",
+  "background_latex": "A flow allocation game is specified by a directed graph \\(G=(V,E)\\), node supplies \\((b_v)_{v\\in V}\\) with \\(b_v\\ge 0\\), and edge capacities \\((c_e)_{e\\in E}\\) with \\(c_e\\ge 0\\). Each node \\(v\\in V\\) is a strategic player.\n\nIn an edge-ranking strategy, each player \\(v\\) chooses a strict total order (a permutation) \\(\\pi_v\\) of its outgoing edges \\(E^+(v)=\\{(v,w)\\in E\\}\\). Given a profile \\(\\pi=(\\pi_v)_{v\\in V}\\), a feasible flow is a vector \\(f=(f_e)_{e\\in E}\\) with \\(0\\le f_e\\le c_e\\) such that for every node \\(v\\), if its total available supply is\n\\[\nF_v \\,=\\, b_v + \\sum_{e\\in E^-(v)} f_e,\n\\]\nthen \\(v\\) sends flow along outgoing edges greedily according to \\(\\pi_v\\): it fully saturates the highest-ranked outgoing edge until either that edge hits capacity or \\(v\\) runs out of supply, then proceeds to the next edge, etc. (Equivalently, \\(f\\) is a fixed point of the induced greedy allocation mapping.)\n\nAmong (possibly multiple) feasible flows for a given profile \\(\\pi\\), the model selects the clearing state \\(\\hat f(\\pi)\\), defined as the coordinate-wise maximum feasible flow (the supremum in the lattice of feasible flows for monotone strategies). The utility of player \\(v\\) under \\(\\pi\\) is the total outgoing flow in the clearing state:\n\\[\nu_v(\\pi) \\,=\\, \\sum_{e\\in E^+(v)} \\hat f_e(\\pi).\n\\]\n\nA pure Nash equilibrium is a profile \\(\\pi\\) such that for every player \\(v\\) and every alternative permutation \\(\\pi'_v\\),\n\\[\nu_v(\\pi) \\ge \\nu_v(\\pi'_v,\\pi_{-v}).\n\\]\n\nThe decision problem of interest is: given \\((G,(b_v),(c_e))\\), does there exist a pure Nash equilibrium in edge-ranking strategies? Complexity is measured in the usual Turing model with \\(b_v,c_e\\) given in binary.",
+  "problem_definition_latex": "Determine the exact complexity class of the following decision problem.\n\nInput: an edge-ranking flow allocation game \\(\\Gamma=(G,(b_v)_{v\\in V},(c_e)_{e\\in E})\\).\n\nQuestion: does there exist a pure Nash equilibrium profile \\(\\pi=(\\pi_v)_{v\\in V}\\) of edge-ranking strategies (permutations of \\(E^+(v)\\)) with utilities \\(u_v(\\pi)=\\sum_{e\\in E^+(v)}\\hat f_e(\\pi)\\) defined by the clearing state \\(\\hat f(\\pi)\\)?\n\nIn particular, decide whether this Nash-existence problem lies in \\(\\mathrm{NP}\\), whether it is \\(\\Sigma_2^p\\)-complete, or otherwise characterize its precise complexity.",
+  "latex": "A flow allocation game is specified by a directed graph \\(G=(V,E)\\), node supplies \\((b_v)_{v\\in V}\\) with \\(b_v\\ge 0\\), and edge capacities \\((c_e)_{e\\in E}\\) with \\(c_e\\ge 0\\). Each node \\(v\\in V\\) is a strategic player.\n\nIn an edge-ranking strategy, each player \\(v\\) chooses a strict total order (a permutation) \\(\\pi_v\\) of its outgoing edges \\(E^+(v)=\\{(v,w)\\in E\\}\\). Given a profile \\(\\pi=(\\pi_v)_{v\\in V}\\), a feasible flow is a vector \\(f=(f_e)_{e\\in E}\\) with \\(0\\le f_e\\le c_e\\) such that for every node \\(v\\), if its total available supply is\n\\[\nF_v \\,=\\, b_v + \\sum_{e\\in E^-(v)} f_e,\n\\]\nthen \\(v\\) sends flow along outgoing edges greedily according to \\(\\pi_v\\): it fully saturates the highest-ranked outgoing edge until either that edge hits capacity or \\(v\\) runs out of supply, then proceeds to the next edge, etc. (Equivalently, \\(f\\) is a fixed point of the induced greedy allocation mapping.)\n\nAmong (possibly multiple) feasible flows for a given profile \\(\\pi\\), the model selects the clearing state \\(\\hat f(\\pi)\\), defined as the coordinate-wise maximum feasible flow (the supremum in the lattice of feasible flows for monotone strategies). The utility of player \\(v\\) under \\(\\pi\\) is the total outgoing flow in the clearing state:\n\\[\nu_v(\\pi) \\,=\\, \\sum_{e\\in E^+(v)} \\hat f_e(\\pi).\n\\]\n\nA pure Nash equilibrium is a profile \\(\\pi\\) such that for every player \\(v\\) and every alternative permutation \\(\\pi'_v\\),\n\\[\nu_v(\\pi) \\ge \\nu_v(\\pi'_v,\\pi_{-v}).\n\\]\n\nThe decision problem of interest is: given \\((G,(b_v),(c_e))\\), does there exist a pure Nash equilibrium in edge-ranking strategies? Complexity is measured in the usual Turing model with \\(b_v,c_e\\) given in binary.\n\nDetermine the exact complexity class of the following decision problem.\n\nInput: an edge-ranking flow allocation game \\(\\Gamma=(G,(b_v)_{v\\in V},(c_e)_{e\\in E})\\).\n\nQuestion: does there exist a pure Nash equilibrium profile \\(\\pi=(\\pi_v)_{v\\in V}\\) of edge-ranking strategies (permutations of \\(E^+(v)\\)) with utilities \\(u_v(\\pi)=\\sum_{e\\in E^+(v)}\\hat f_e(\\pi)\\) defined by the clearing state \\(\\hat f(\\pi)\\)?\n\nIn particular, decide whether this Nash-existence problem lies in \\(\\mathrm{NP}\\), whether it is \\(\\Sigma_2^p\\)-complete, or otherwise characterize its precise complexity.",
+  "location_in_paper": "Section 5.1, Remark 21 (page 38 in the provided text pagination)",
+  "open_problem_quote": "It is unclear whether the problem of deciding existence of a pure Nash equilibrium in an edge-ranking game is in NP or not, due to NP-hardness of verification that a node plays a best response (see Theorem 14). It is easy to see that the decision problem is in \\(\\Sigma_2^p\\). The problem could be \\(\\Sigma_2^p\\)-complete, similar to related decision problems in strategic max-flow games [33, 21]. Proving such a result is an interesting problem.",
+  "area": "algorithmic game theory",
+  "keywords": [
+    "flow allocation games",
+    "edge-ranking strategies",
+    "pure Nash equilibrium",
+    "complexity theory",
+    "polynomial hierarchy",
+    "Sigma2p completeness"
+  ],
+  "counterexample_suitability": "low",
+  "counterexample_suitability_rationale": "This is a complexity-classification problem rather than an existential conjecture about a finite structure. While one can search for reductions, automated instance search is not a direct way to resolve membership or completeness in \\(\\mathrm{NP}\\) or \\(\\Sigma_2^p\\).",
+  "alphaevolve_suitability": "medium",
+  "alphaevolve_suitability_rationale": "An evolutionary coding loop could help explore candidate reductions (gadgets) from known \\(\\Sigma_2^p\\)-complete problems and test them on small instances, but the fitness signal is only a heuristic proxy and the final step requires a formal complexity proof.",
+  "extraction_model": "gpt-5.2",
+  "extraction_reasoning_effort": null,
+  "verification": {
+    "is_open": true,
+    "unverified": true,
+    "notice": "Generated from the paper text only and not independently verified as still open.",
+    "methods_used": [],
+    "source": null,
+    "model": null,
+    "total_cost_usd": 0.0
+  },
+  "literature_review": {
+    "method": "forward_citation_review",
+    "model": "gpt-5.2",
+    "importance": 7,
+    "difficulty": 8,
+    "synthesis": "In Flow Allocation Games (Bertschinger\u2013Hoefer\u2013Schmand), edge-ranking strategies (permutations of outgoing edges) induce a monotone allocation map whose feasible flows form a complete lattice; the model selects the clearing state \\(\\hat f(\\pi)\\), the coordinate-wise maximum fixed point. Section 5 of the source paper shows that, unlike unit-ranking strategies, edge-ranking games can lack pure Nash equilibria and that deciding existence of a pure Nash equilibrium (and strong equilibrium) is strongly NP-hard (Theorem 20). However, the paper explicitly leaves open the *exact* complexity classification: Remark 21 notes that NP-membership is unclear because verifying best responses can be NP-hard, while membership in \\(\\Sigma_2^p\\) is straightforward.\n\nThe forward-citing literature provided does not resolve this gap for the edge-ranking permutation game. Instead, it supplies supporting evidence from closely related clearing-based strategic models in financial networks. In particular, works on strategic debt forgiveness (edge removals) and strategic prepayments establish NP-hardness of pure-strategy Nash equilibrium existence under default costs in proportional-clearing (Rogers\u2013Veraart/Eisenberg\u2013Noe) settings. These results suggest that equilibrium-existence hardness is robust across clearing mechanisms and strategic action spaces, and they offer reduction templates (e.g., from PARTITION) and structural nonexistence/existence phenomena that may be adaptable to the edge-ranking setting.\n\nOn the algorithmic side, Computing Tarski Fixed Points in Financial Networks provides strongly polynomial algorithms for computing minimal/maximal clearing fixed points for broad monotone piecewise-linear payment rules, explicitly including edge-ranking. Such results strengthen the toolbox for any attempt to place Nash-existence in NP (via polynomial-time evaluation of \\(\\hat f(\\pi)\\) and utilities) or to sharpen upper bounds. Additional related-tool papers on claims trading and debt swapping develop complexity and structural techniques in the same edge-ranking/maximal-clearing framework, but do not address equilibrium existence. Overall, the exact placement of edge-ranking Nash-existence between NP and \\(\\Sigma_2^p\\) (or higher) remains open in the provided citation set.",
+    "total_cost_usd": 0.6241739000000001,
+    "citations_analyzed": 10,
+    "sources": [
+      {
+        "title": "Optimal Bailouts and Strategic Debt Forgiveness in Financial Networks",
+        "bibtex": "@article{KanellopoulosKyropoulouZhouOptimalBailoutsStrategicDebtForgiveness,\n  title        = {Optimal Bailouts and Strategic Debt Forgiveness in Financial Networks},\n  author       = {},\n  year         = {????},\n  note         = {Metadata (authors/year/venue/doi) not provided in the citation analysis block.}\n}\n",
+        "source_url": "",
+        "theorem_or_result": "In the Eisenberg\u2013Noe/Rogers\u2013Veraart proportional-clearing financial network model with strategic debt forgiveness (each bank chooses a subset of its incoming liabilities to delete), the paper proves NP-hardness of equilibrium-related decision problems: in particular, with default costs \n\\(\\alpha=\\beta=1/\\sum_i e_i\\), deciding whether a pure Nash equilibrium exists is NP-hard (Theorem 15a). It also shows that without default costs and without cash injections, a pure Nash equilibrium always exists (Theorem 7), while with cash injections (even without default costs) a pure Nash equilibrium need not exist (Theorem 9).",
+        "relevance_category": "PARTIAL_PROGRESS",
+        "relevance_score": 8,
+        "connection": "The open problem asks for the exact complexity of pure Nash equilibrium existence in edge-ranking flow allocation games (players choose permutations of outgoing edges; outcome is the maximal/clearing fixed point of a greedy allocation). This citing paper does not study edge-ranking strategies; instead it studies a different strategic model (edge-removal/forgiveness of incoming debts) under proportional-clearing payments with possible default costs and bailouts. Nevertheless, it is directly relevant in two ways: (i) it provides a concrete NP-hardness result for deciding existence of pure Nash equilibria in a closely related class of financial-network clearing games (Theorem 15a), suggesting that Nash-existence questions in clearing-based flow games can be computationally intractable; (ii) it gives explicit non-existence examples (Theorems 9 and 12) and existence guarantees on restricted topologies (Theorems 7 and 13), which may inform analogous structural/complexity classifications for edge-ranking flow allocation games. It does not resolve whether the edge-ranking Nash-existence problem is in NP, \\(\\Sigma_2^p\\)-complete, etc., nor does it provide a reduction tailored to the permutation-strategy edge-ranking model."
+      },
+      {
+        "title": "Optimal bailouts and strategic debt forgiveness in financial networks",
+        "bibtex": "@article{KanellopoulosKyropoulouZhouOptimalBailoutsStrategicDebtForgivenessLower,\n  title        = {Optimal bailouts and strategic debt forgiveness in financial networks},\n  author       = {},\n  year         = {????},\n  note         = {Metadata (authors/year/venue/doi) not provided in the citation analysis block.}\n}\n",
+        "source_url": "",
+        "theorem_or_result": "The paper proves NP-hardness results for Nash-equilibrium questions in a related financial-network game where players choose sets of incoming debts to forgive (edge removals) and outcomes are maximal clearing payments. In particular (Theorem 15a), in edge-removal games with default costs \\(\\alpha=\\beta<1\\), deciding whether a pure Nash equilibrium exists is NP-hard; additionally, verifying a given profile is a PNE is NP-hard (Theorem 15b), computing a best response is NP-hard (Theorem 15c), and computing a welfare-maximizing profile is NP-hard (Theorem 15d).",
+        "relevance_category": "PARTIAL_PROGRESS",
+        "relevance_score": 7,
+        "connection": "The open problem asks for the exact complexity of pure Nash equilibrium existence in edge-ranking flow allocation games (players choose permutations of outgoing edges; clearing state is the coordinate-wise maximum fixed point of a greedy allocation). This citing paper does not analyze edge-ranking strategies; instead it studies a different strategic model (edge-removal/forgiveness of incoming debts) under proportional clearing payments (EisenbergNoe/RogersVeraart) and sometimes cash injections/default costs. Nevertheless, it provides evidence that Nash-existence questions in closely related flow/clearing models can be computationally hard: it shows NP-hardness of deciding PNE existence once default costs are present (Theorem 15a) and gives examples of non-existence even without default costs when cash injections are allowed (Theorem 9). These results do not settle whether edge-ranking Nash existence is in NP vs \\(\\Sigma_2^p\\)-complete, but they suggest hardness phenomena and supply reduction templates (from PARTITION) that might inspire reductions for the edge-ranking setting."
+      },
+      {
+        "title": "A strategic analysis of prepayments in financial credit networks",
+        "bibtex": "@article{StrategicAnalysisPrepaymentsFinancialCreditNetworks,\n  title        = {A strategic analysis of prepayments in financial credit networks},\n  author       = {},\n  year         = {????},\n  note         = {Metadata (authors/year/venue/doi) not provided in the citation analysis block.}\n}\n",
+        "source_url": "",
+        "theorem_or_result": "The paper defines a different strategic model (prepayment games in Eisenberg\u2013Noe/Rogers\u2013Veraart financial networks) and proves hardness of pure-strategy Nash equilibrium (PSNE) existence in one of its variants: In the total-assets utility setting with default costs \\(\\alpha\\in(0,1)\\), deciding whether a PSNE exists is NP-hard (Theorem 6(c)). It also shows nonexistence can occur (Theorem 4) and that in an equity-utility variant PSNE always exist (indeed every profile is a PSNE; Theorem 7).",
+        "relevance_category": "PARTIAL_PROGRESS",
+        "relevance_score": 6,
+        "connection": "The open problem asks for the exact complexity of PSNE existence in edge-ranking flow allocation games (players choose permutations of outgoing edges; outcome is the maximal/clearing flow fixed point). This citing paper does not resolve that classification. However, it is closely related in spirit: it studies strategic behavior in financial network clearing models and explicitly cites Flow Allocation Games (Bertschinger et al., 2024), which introduced edge-ranking/coin-ranking payment schemes. The paper contributes a separate NP-hardness result for PSNE existence in a different game (strategic prepayments) built on clearing payments with default costs. This provides evidence that Nash-existence questions around clearing-based financial network games can be computationally intractable, but it neither proves NP-membership nor \\(\\Sigma_2^p\\)-hardness/completeness for the edge-ranking flow game, nor does it analyze the permutation-strategy space central to the open problem."
+      },
+      {
+        "title": "Computing Tarski Fixed Points in Financial Networks",
+        "bibtex": "@article{ComputingTarskiFixedPointsFinancialNetworks,\n  title        = {Computing Tarski Fixed Points in Financial Networks},\n  author       = {},\n  year         = {????},\n  note         = {Metadata (authors/year/venue/doi) not provided in the citation analysis block.}\n}\n",
+        "source_url": "",
+        "theorem_or_result": "The paper gives strongly polynomial-time algorithms to compute (i) the minimal Tarski fixed point (minimal clearing state) and (ii) the maximal fixed point for broad financial-network clearing models with monotone, piecewise-linear payment functions (including edge-ranking), and extends to default costs. In particular, Algorithm 1 computes the minimal clearing state in time \\(O((n+k)(n^3+m))\\) for networks without default cost (Theorem 1), and with default cost in \\(O((k+n+m)(n^3+m))\\) (Corollary 1). It also shows a polynomial-time reduction from general piecewise-linear payment functions to priority-proportional ones preserving clearing states (Lemma 6), yielding a polynomial-time algorithm for maximal clearing (Corollary 3).",
+        "relevance_category": "RELATED_TOOL",
+        "relevance_score": 6,
+        "connection": "The open problem asks for the complexity of *existence of a pure Nash equilibrium* in edge-ranking flow allocation games (players choose permutations; outcome is the coordinate-wise maximal feasible flow/clearing state; utilities are outgoing flow). This paper does not study Nash equilibria or strategic choice of rankings. Instead it studies computation of clearing states (minimal/maximal fixed points) in Eisenberg\u2013Noe-type financial networks with monotone payment functions, explicitly including edge-ranking as a special case. Thus it provides algorithmic tools for computing clearing outcomes for a *given* ranking profile, which is a subroutine potentially relevant to checking best responses or verifying equilibria, but it does not classify the complexity of Nash-existence nor provide NP/\\(\\Sigma_2^p\\) hardness/membership results."
+      },
+      {
+        "title": "Algorithms for claims trading",
+        "bibtex": "@article{AlgorithmsForClaimsTrading,\n  title        = {Algorithms for claims trading},\n  author       = {},\n  year         = {????},\n  doi          = {10.1145/3801151}\n}\n",
+        "source_url": "https://doi.org/10.1145/3801151",
+        "theorem_or_result": "The paper studies algorithmic and complexity questions for claims trading in Eisenberg\u2013Noe style financial networks with monotone payment functions (including edge-ranking payments). Key results include: - Proposition 9: for edge-ranking payments and a single claims trade, one can compute an optimal creditor-positive haircut rate \\(\\alpha^*\\in[0,1]\\) in polynomial time (via a return-network construction and computing a maximal clearing state). - Theorem 15: choosing a subset of incoming claims to trade to make a given creditor bank solvent (IncomingSave-VR) is weakly NP-hard. - Theorem 19: despite NP-hardness, there is a bicriteria FPTAS for incoming-claims multi-trades (allowing haircut rates up to \\(1+\\varepsilon\\)) to achieve assets at least \\(A^*-\\delta\\). - Theorem 22/Corollary 23: for trading outgoing edges under edge-ranking payments, the optimization problem is strongly NP-hard and hard to approximate within \\(n^{1/2-\\varepsilon}\\).",
+        "relevance_category": "RELATED_TOOL",
+        "relevance_score": 3,
+        "connection": "The open problem asks for the exact complexity of existence of a pure Nash equilibrium in edge-ranking flow allocation games (players choose permutations of outgoing edges; outcome is the maximal clearing state; utilities are outgoing flow). This paper does not study Nash equilibria or equilibrium existence. It instead analyzes a different strategic/algorithmic intervention problem (claims trading) in financial networks, where payment rules may be edge-ranking and clearing states form a lattice with a maximal element. The main conceptual overlap is the use of edge-ranking payment/flow rules and maximal clearing states under monotone mappings, plus complexity results (NP-hardness/FPTAS) for related combinatorial decision problems. These techniques might be adaptable as tools for reductions or for reasoning about monotonicity/lattice structure in the equilibrium-existence problem, but no direct classification (NP vs \\(\\Sigma_2^p\\), etc.) for Nash existence is provided."
+      },
+      {
+        "title": "Dynamic Debt Swapping in Financial Networks",
+        "bibtex": "@article{DynamicDebtSwappingFinancialNetworks,\n  title        = {Dynamic Debt Swapping in Financial Networks},\n  author       = {},\n  year         = {????},\n  note         = {Metadata (authors/year/venue/doi) not provided in the citation analysis block.}\n}\n",
+        "source_url": "",
+        "theorem_or_result": "The paper studies debt-swap dynamics in financial networks under monotone allocation rules, focusing on edge-ranking clearing. Key results include: - Theorem 10: No positive debt swap exists under any monotone allocation rule (i.e., there is no swap where both involved creditors strictly increase total assets). - Theorem 14: A debt swap is semi-positive iff it is Pareto-improving (all banks\u2019 total assets weakly increase and at least one strictly increases). - Theorem 20: For edge-ranking rules, every sequence of v-improving semi-positive swaps has polynomial length; hence SemiSwap(v) can be solved in polynomial time. - Theorem 26/Corollary 27: A local optimum for arbitrary v-improving swaps is PLS-complete to compute; there exist instances where every such improvement path to a local optimum is exponentially long.",
+        "relevance_category": "RELATED_TOOL",
+        "relevance_score": 3,
+        "connection": "The open problem asks for the exact complexity of deciding whether a pure Nash equilibrium exists in edge-ranking flow allocation games (players choose permutations of outgoing edges; outcome is the maximal/clearing flow; utility is total outgoing flow). This paper does not analyze Nash equilibrium existence or its complexity. It instead analyzes a different strategic/dynamic model: local graph modifications via debt swaps (swapping creditors of equal-liability edges) and the resulting changes in the clearing state under edge-ranking clearing. While both settings share the same underlying clearing mechanism (maximal fixed point for edge-ranking/monotone allocation), the decision problems differ: swap dynamics/local optima vs. existence of a permutation-profile equilibrium. The paper contributes structural monotonicity and lattice-based arguments (e.g., source\u2013sink equivalency) and complexity results in PLS for local search, which might be useful as techniques or for reductions, but it does not place the Nash-existence problem in NP, ^p, etc., nor does it resolve equilibrium existence."
+      }
+    ]
+  },
+  "costs": {
+    "extractor_total_cost_usd": 0.0676235,
+    "verifier_total_cost_usd": 0.0,
+    "literature_total_cost_usd": 0.6241739000000001,
+    "total_cost_usd": 0.6917974
+  },
+  "provenance": {
+    "problem_source": "/project/caai_amzn_cmpr/efithian/llm-math/data/mor_prev_2_years_problems/W4391111008/problems.json",
+    "verification_source": null,
+    "literature_source": "/project/caai_amzn_cmpr/efithian/llm-math/data_local/website_forward_citation_strict_reviews/W4391111008_p0_forward_citation_review.json"
+  },
+  "forward_citation_review": {
+    "run_id": "W4391111008_p0",
+    "citations_analyzed": 10,
+    "is_open": true,
+    "model": "gpt-5.2"
+  },
+  "quantitative_bounds": false
+}

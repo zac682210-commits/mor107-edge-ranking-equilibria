@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying preprint using the preferred-citation metadata."
+type: software
+title: "MOR 107: Edge-Ranking Flow Allocation Games — Reproduction Package"
+authors:
+  - family-names: Lin
+    given-names: Zhiyan
+version: "0.1"
+preferred-citation:
+  type: article
+  title: "Pure Nash Equilibrium Existence in Edge-Ranking Flow Allocation Games is Sigma_2^p-Complete"
+  authors:
+    - family-names: Lin
+      given-names: Zhiyan
+  year: 2026
+  month: 10
+  notes: "Preprint, version 0.1, dated 12 October 2026."

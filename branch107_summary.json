@@ -1,0 +1,97 @@
+[
+  {
+    "branch": "Pranav",
+    "sha": "5898df3fe4ebf333ffe91fc98d3f5c9f34d76cbe",
+    "truncated": false,
+    "hits": []
+  },
+  {
+    "branch": "main",
+    "sha": "3b2de3237c29623f479c52c31db54fd60b97fd3c",
+    "truncated": false,
+    "hits": [
+      {
+        "path": "data/llm_math_export/problems/W4391111008_p0.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4ec1d4d1054d1754376d7a60ae42020d1a89fc3d",
+        "size": 25519,
+        "url": "https://api.github.com/repos/AI-in-Math-OR/open-problems-in-or/git/blobs/4ec1d4d1054d1754376d7a60ae42020d1a89fc3d"
+      },
+      {
+        "path": "data/llm_math_export/solution_progress/W4391111008_p0",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "3a86f7208550abd1a04b7cecce8b3a171f041a1a",
+        "url": "https://api.github.com/repos/AI-in-Math-OR/open-problems-in-or/git/trees/3a86f7208550abd1a04b7cecce8b3a171f041a1a"
+      },
+      {
+        "path": "data/llm_math_export/solution_progress/W4391111008_p0/partial_progress",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "3bda3b4c044d072c52386bd494e7aa3bda3dc801",
+        "url": "https://api.github.com/repos/AI-in-Math-OR/open-problems-in-or/git/trees/3bda3b4c044d072c52386bd494e7aa3bda3dc801"
+      },
+      {
+        "path": "data/llm_math_export/solution_progress/W4391111008_p0/partial_progress/107.pdf",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0babdce1e2e2d4abe0fbddcbe9f20a564b4d2fe6",
+        "size": 265846,
+        "url": "https://api.github.com/repos/AI-in-Math-OR/open-problems-in-or/git/blobs/0babdce1e2e2d4abe0fbddcbe9f20a564b4d2fe6"
+      }
+    ]
+  },
+  {
+    "branch": "pete",
+    "sha": "4c4ac08574b65cf7996c09b0d48940090a6c8309",
+    "truncated": false,
+    "hits": [
+      {
+        "path": "data/llm_math_export/problems/W4391111008_p0.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d87e2a740d50632312cf2ebe0dadfc9d28837b21",
+        "size": 25487,
+        "url": "https://api.github.com/repos/AI-in-Math-OR/open-problems-in-or/git/blobs/d87e2a740d50632312cf2ebe0dadfc9d28837b21"
+      }
+    ]
+  },
+  {
+    "branch": "rad",
+    "sha": "22a6523c6c8493cbf545bd87b47b8f6ce74b0d8d",
+    "truncated": false,
+    "hits": [
+      {
+        "path": "data/llm_math_export/problems/W4391111008_p0.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4ec1d4d1054d1754376d7a60ae42020d1a89fc3d",
+        "size": 25519,
+        "url": "https://api.github.com/repos/AI-in-Math-OR/open-problems-in-or/git/blobs/4ec1d4d1054d1754376d7a60ae42020d1a89fc3d"
+      },
+      {
+        "path": "data/llm_math_export/solution_progress/W4391111008_p0",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "3a86f7208550abd1a04b7cecce8b3a171f041a1a",
+        "url": "https://api.github.com/repos/AI-in-Math-OR/open-problems-in-or/git/trees/3a86f7208550abd1a04b7cecce8b3a171f041a1a"
+      },
+      {
+        "path": "data/llm_math_export/solution_progress/W4391111008_p0/partial_progress",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "3bda3b4c044d072c52386bd494e7aa3bda3dc801",
+        "url": "https://api.github.com/repos/AI-in-Math-OR/open-problems-in-or/git/trees/3bda3b4c044d072c52386bd494e7aa3bda3dc801"
+      },
+      {
+        "path": "data/llm_math_export/solution_progress/W4391111008_p0/partial_progress/107.pdf",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0babdce1e2e2d4abe0fbddcbe9f20a564b4d2fe6",
+        "size": 265846,
+        "url": "https://api.github.com/repos/AI-in-Math-OR/open-problems-in-or/git/blobs/0babdce1e2e2d4abe0fbddcbe9f20a564b4d2fe6"
+      }
+    ]
+  }
+]
